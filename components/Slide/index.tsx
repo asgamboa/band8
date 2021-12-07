@@ -13,7 +13,7 @@ const Slide = ({ slideName, slideBackgroundImage }: Slide) => {
   return (
     <div className={styles["hero__slide"]} style={{ backgroundImage: `url(${slideBackgroundImage})` }}>
       <p>{slideName}</p>
-      <Link href='/xd' passHref>
+      <Link href='/' passHref>
         <Button variant='contained' endIcon={<ArrowForwardIos />} className={styles["hero__slide-button"]}>
           VER SECCIÓN
         </Button>

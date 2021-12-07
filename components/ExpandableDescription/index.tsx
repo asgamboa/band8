@@ -11,7 +11,7 @@ export interface ExpandableDescriptionProps {
 
 const ExpandableDescription = ({ title, description }: ExpandableDescriptionProps) => {
   return (
-    <Accordion className={styles["about-us__accordion"]}>
+    <Accordion className={styles["about-us__accordion"]} sx={{ backgroundColor: "#694475", color: "white" }}>
       <AccordionSummary expandIcon={<ExpandMore className={styles["about-us__accordion-icon"]} />}>
         <h3 className={styles["about-us__accordion-title"]}>{title}</h3>
       </AccordionSummary>

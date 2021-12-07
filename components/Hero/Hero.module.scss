@@ -1,0 +1,40 @@
+@use "../../styles/vars" as *;
+
+.hero {
+  position: relative;
+
+  .hero__viewport {
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+
+    .hero__container {
+      display: flex;
+      height: inherit;
+    }
+  }
+
+  .hero__prev-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    color: white;
+
+    &:disabled {
+      opacity: 0;
+    }
+  }
+
+  .hero__next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    color: white;
+
+    &:disabled {
+      opacity: 0;
+    }
+  }
+}

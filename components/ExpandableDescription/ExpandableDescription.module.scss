@@ -1,0 +1,19 @@
+@use "../../styles/vars" as *;
+
+.about-us__accordion {
+  color: white;
+  background-color: $cyberGrape;
+  margin-bottom: 20px;
+
+  .about-us__accordion-icon {
+    color: white;
+  }
+
+  .about-us__accordion-title {
+    font-size: rem(24);
+  }
+
+  .about-us__accordion-description {
+    text-align: justify;
+  }
+}

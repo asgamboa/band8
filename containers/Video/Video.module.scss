@@ -1,0 +1,29 @@
+@use "../../styles/vars" as *;
+
+.commercial {
+  background-image: url("/cool-room.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+
+  .commercial__title {
+    text-align: center;
+    font-size: rem(24);
+    color: white;
+    padding: 40px 0;
+  }
+
+  .commercial__video {
+    width: 100%;
+    max-width: 1080px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &:nth-child(4) {
+    padding-bottom: 70px;
+  }
+}

@@ -1,0 +1,32 @@
+@use "../../styles/vars" as *;
+
+.hero__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  flex: 0 0 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  .hero__slide-button {
+    font-family: "Outfit", sans-serif;
+    background-color: $pinkLavender;
+    color: $cyberGrape;
+  }
+
+  p {
+    margin: 0 20px 150px;
+    font-size: rem(48);
+    text-align: center;
+    color: white;
+  }
+}

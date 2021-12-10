@@ -12,23 +12,23 @@ const slideData: {
   slideName: string;
 }[] = [
   {
-    slideBackgroundImage: "/viniles.jpg",
+    slideBackgroundImage: "/img/viniles.jpg",
     slideName: "Discos y viniles",
   },
   {
-    slideBackgroundImage: "/camisas.jpg",
+    slideBackgroundImage: "/img/camisas.jpg",
     slideName: "Sudaderas y camisas",
   },
   {
-    slideBackgroundImage: "/accesorios.jpg",
+    slideBackgroundImage: "/img/accesorios.jpg",
     slideName: "Accesorios",
   },
   {
-    slideBackgroundImage: "/tazas.jpg",
+    slideBackgroundImage: "/img/tazas.jpg",
     slideName: "Tazas",
   },
   {
-    slideBackgroundImage: "/libros.jpg",
+    slideBackgroundImage: "/img/libros.jpg",
     slideName: "Mangas y libros",
   },
 ];

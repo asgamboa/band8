@@ -1,9 +1,9 @@
 @use "../../styles/vars" as *;
 
 .location {
-  background-color: $cyberGrape;
+  background-color: $pinkLavender;
+  color: $cyberGrape;
 
-  color: white;
   .location__map {
     width: 100%;
     height: 70vh;

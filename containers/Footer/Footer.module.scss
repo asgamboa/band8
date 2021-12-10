@@ -10,9 +10,13 @@
   padding-bottom: 10px;
 
   .footer__social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
     .footer__icon {
       font-size: rem(32px);
-      align-self: center;
       color: $cyberGrape;
       margin: 20px 10px;
 
@@ -23,6 +27,21 @@
       }
       transition: all 0.5s ease;
     }
+
+    .footer__svg-container {
+      .footer_svg {
+        width: rem(32px);
+        height: rem(32px);
+        fill: $cyberGrape;
+
+        &:hover {
+          fill: white;
+          cursor: pointer;
+          transform: scale(1.2);
+        }
+        transition: all 0.5s ease;
+      }
+    }
   }
 
   .footer__contact-mail {
@@ -32,7 +51,9 @@
     align-items: center;
 
     .contact-email__title {
-      color: white;
+      color: $cyberGrape;
+      font-weight: 500;
+      margin-bottom: 5px;
     }
 
     .contact-email {
@@ -48,7 +69,7 @@
     }
 
     .footer__copyright-message {
-      color: white;
+      color: $cyberGrape;
     }
   }
 }

@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $pinkLavender;
+  background-color: #151515;
   padding-bottom: 10px;
 
   .footer__social-media {
@@ -17,11 +17,11 @@
 
     .footer__icon {
       font-size: rem(32px);
-      color: $cyberGrape;
+      color: $pinkLavender;
       margin: 20px 10px;
 
       &:hover {
-        color: white;
+        color: $cyberGrape;
         cursor: pointer;
         transform: scale(1.2);
       }
@@ -32,10 +32,10 @@
       .footer_svg {
         width: rem(32px);
         height: rem(32px);
-        fill: $cyberGrape;
+        fill: $pinkLavender;
 
         &:hover {
-          fill: white;
+          fill: $cyberGrape;
           cursor: pointer;
           transform: scale(1.2);
         }
@@ -50,26 +50,20 @@
     justify-content: center;
     align-items: center;
 
-    .contact-email__title {
-      color: $cyberGrape;
-      font-weight: 500;
-      margin-bottom: 5px;
-    }
-
     .contact-email {
       text-decoration: none;
-      color: $cyberGrape;
+      color: $pinkLavender;
       margin-bottom: 20px;
+      transition: all 0.5s ease;
 
       &:hover {
-        color: white;
+        color: $cyberGrape;
         cursor: pointer;
       }
-      transition: all 0.5s ease;
     }
 
     .footer__copyright-message {
-      color: $cyberGrape;
+      color: $pinkLavender;
     }
   }
 }

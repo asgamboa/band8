@@ -2,6 +2,12 @@
 
 .hero {
   position: relative;
+  background-color: black;
+  max-height: 700px;
+
+  @media (min-width: $smallLaptop) and (min-height: 500px) {
+    max-height: 1200px;
+  }
 
   .hero__viewport {
     width: 100%;
@@ -9,32 +15,32 @@
     overflow: hidden;
 
     .hero__container {
+      max-height: 700px;
+      @media (min-width: $smallLaptop) and (min-height: 500px) {
+        max-height: 1200px;
+      }
       display: flex;
       height: inherit;
     }
   }
 
-  .hero__prev-button {
+  .hero__change-slide-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 0;
-    color: white;
+    right: 0;
+    color: $pinkLavender;
 
     &:disabled {
       opacity: 0;
     }
   }
 
-  .hero__next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    color: white;
+  .hero__prev-button {
+    left: 0;
+  }
 
-    &:disabled {
-      opacity: 0;
-    }
+  .hero__next-button {
+    right: 0;
   }
 }

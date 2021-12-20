@@ -68,10 +68,10 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <IconButton className={styles["hero__prev-button"]} onClick={scrollPrev} disabled={!prevBtnEnabled}>
+      <IconButton className={`${styles["hero__change-slide-button"]} ${styles["hero__prev-button"]}`} onClick={scrollPrev} disabled={!prevBtnEnabled}>
         <ArrowBackIosNew />
       </IconButton>
-      <IconButton className={styles["hero__next-button"]} onClick={scrollNext} disabled={!nextBtnEnabled}>
+      <IconButton className={`${styles["hero__change-slide-button"]} ${styles["hero__next-button"]}`} onClick={scrollNext} disabled={!nextBtnEnabled}>
         <ArrowForwardIos />
       </IconButton>
     </section>

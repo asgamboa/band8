@@ -2,11 +2,17 @@ import { Facebook, Instagram, WhatsApp } from "@mui/icons-material";
 import React from "react";
 import styles from "./Footer.module.scss";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className={styles["footer"]}>
-      <div className={styles["footer__social-media"]}>
+    <section className={styles["footer"]}>
+      <motion.div
+        initial={{ scale: 0.8 }} //
+        whileInView={{ scale: 1 }}
+        viewport={{ once: false }}
+        className={styles["footer__social-media"]}
+      >
         <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/band8_mx/'>
           <Instagram className={styles["footer__icon"]} />
         </a>
@@ -20,15 +26,19 @@ const Footer = () => {
         <a target='_blank' rel='noopener noreferrer' href='https://api.whatsapp.com/send?phone=526674780773'>
           <WhatsApp className={styles["footer__icon"]} />
         </a>
-      </div>
-      <div className={styles["footer__contact-mail"]}>
-        <h6 className={styles["contact-email__title"]}>Correo de contacto</h6>
+      </motion.div>
+      <motion.div
+        initial={{ scale: 0.8 }} //
+        whileInView={{ scale: 1 }}
+        viewport={{ once: false }}
+        className={styles["footer__contact-mail"]}
+      >
         <Link href='mailto:hola@band8.com'>
           <a className={styles["contact-email"]}>band8_2021@gmail.com</a>
         </Link>
         <p className={styles["footer__copyright-message"]}>Band8 2021 ©</p>
-      </div>
-    </footer>
+      </motion.div>
+    </section>
   );
 };
 

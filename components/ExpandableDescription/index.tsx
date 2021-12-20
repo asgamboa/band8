@@ -1,8 +1,8 @@
+import { Paper } from "@mui/material";
+import { motion } from "framer-motion";
 import React from "react";
-import styles from "./ExpandableDescription.module.scss";
 
-import { Accordion, AccordionDetails, AccordionSummary, Paper } from "@mui/material";
-import { ExpandMore } from "@mui/icons-material";
+import styles from "./ExpandableDescription.module.scss";
 
 export interface ExpandableDescriptionProps {
   title: string;
@@ -12,31 +12,34 @@ export interface ExpandableDescriptionProps {
 const ExpandableDescription = ({ title, description }: ExpandableDescriptionProps) => {
   return (
     <>
-      {/* <Accordion className={styles["about-us__accordion"]}>
-        <AccordionSummary expandIcon={<ExpandMore className={styles["about-us__accordion-icon"]} />}>
-          <h3 className={styles["about-us__accordion-title"]}>{title}</h3>
-        </AccordionSummary>
-        <AccordionDetails>
-          {description.map((paragraph, idx) => {
-            return (
-              <div key={idx}>
-                <p className={styles["about-us__accordion-description"]}>{paragraph}</p>
-                <br />
-              </div>
-            );
-          })}
-        </AccordionDetails>
-      </Accordion> */}
-
-      <Paper className={styles["about-us__accordion"]} elevation={12}>
-        <h3 className={styles["about-us__accordion-title"]}>{title}</h3>
+      <Paper
+        component={motion.div} //
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        className={styles["about-us__accordion"]}
+        elevation={12}
+      >
+        <motion.h3
+          initial={{ scale: 0.8 }} //
+          whileInView={{ scale: 1 }}
+          viewport={{ once: false }}
+          className={styles["about-us__accordion-title"]}
+        >
+          {title}
+        </motion.h3>
         <br />
         {description.map((paragraph, idx) => {
           return (
-            <div key={idx}>
+            <motion.div
+              initial={{ scale: 0.8 }} //
+              whileInView={{ scale: 1 }}
+              viewport={{ once: false }}
+              key={idx}
+            >
               <p className={styles["about-us__accordion-description"]}>{paragraph}</p>
               <br />
-            </div>
+            </motion.div>
           );
         })}
       </Paper>

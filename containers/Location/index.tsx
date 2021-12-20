@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styles from "./Location.module.scss";
 
@@ -10,12 +11,17 @@ const Location = () => {
         allowFullScreen
         loading='lazy'
       />
-      <div className={styles["location__address"]}>
+      <motion.div
+        initial={{ scale: 0.8 }} //
+        whileInView={{ scale: 1 }}
+        viewport={{ once: false }}
+        className={styles["location__address"]}
+      >
         <h3 className={styles["address__title"]}>Encuéntranos en:</h3>
         <p className={styles["address__info"]}>Diego Valadés Ríos 1676</p>
         <p className={styles["address__info"]}>Desarrollo Urbano Tres Ríos 80000</p>
         <p className={styles["address__info"]}>Culiacán Rosales, Sin.</p>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -125,6 +125,14 @@ table {
   border-spacing: 0;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -133,4 +141,8 @@ table {
 
 html * {
   font-family: "Outfit", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
 }

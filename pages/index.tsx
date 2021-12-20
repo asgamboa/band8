@@ -24,16 +24,20 @@ const Home: NextPage = () => {
         <meta name='theme-color' content='#ffffff' />
       </Head>
 
-      <Header />
+      <header>
+        <Header />
+      </header>
 
       <main>
         <Hero />
         <AboutUs />
         <Location />
-        <Video />
+        {/* <Video /> */}
       </main>
 
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

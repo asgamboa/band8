@@ -1,12 +1,13 @@
 @use "../../styles/vars" as *;
 
 .location {
-  background-color: $pinkLavender;
-  color: $cyberGrape;
+  background-color: black;
+  color: $pinkLavender;
 
   .location__map {
     width: 100%;
-    height: 70vh;
+    height: 350px;
+    filter: invert(90%);
   }
 
   .location__address {
